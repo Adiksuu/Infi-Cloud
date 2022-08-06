@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Infi Cloud - GET STARTED</title>
+		<link
+			rel="shortcut icon"
+			href="/src/assets/images/logo-borderless.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/src/assets/css/design/style.css" />
+		<link rel="stylesheet" href="/src/assets/css/template/template.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+	</head>
+	<body onload="loader();">
+		<header class="l-header">
+			<nav class="nav bd-grid">
+				<div>
+					<a href="#" class="nav__logo">Infinity Cloud</a>
+				</div>
+
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="/index.html#home" class="nav__link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="/index.html#users" class="nav__link">portfolio</a>
+						</li>
+						<li class="nav__item" id="start">
+							<a href="#" class="nav__link">Get Started</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="fas fa-bars"></i>
+				</div>
+			</nav>
+		</header>
+
+		<section class="home font-poppins" id="home">
+			<div class="home__info">
+				<h1 class="home__title">make own <span>portfolio</span></h1>
+				<p class="home__subtitle small-text">
+					Create your own portfolio without learning programming! Purchase your
+					own portfolio page, provide key information and then wait until max.
+					6h to your website!
+				</p>
+			</div>
+			<div class="home__buttons flex">
+				<!-- <button class="border-50 weight-500 color-purple outline width-20">
+					BUY NOW 5<span>$</span>
+				</button> -->
+				<form
+					action="https://www.paypal.com/cgi-bin/webscr"
+					method="post"
+					target="_top"
+				>
+					<input type="hidden" name="cmd" value="_s-xclick" />
+					<input type="hidden" name="hosted_button_id" value="TKEAAFB7DUSCN" />
+					<input
+						type="image"
+						src="/src/assets/images/button-shop (2).png"
+						border="0"
+						name="submit"
+						alt="PayPal – Płać wygodnie i bezpiecznie"
+					/>
+					<img
+						alt=""
+						border="0"
+						src="https://www.paypalobjects.com/pl_PL/i/scr/pixel.gif"
+						width="1"
+						height="1"
+					/>
+				</form>
+			</div>
+			<div class="home__socials flex">
+				<a href="#" class="icon"><i class="fab fa-discord"></i></a>
+				<a href="https://twitter.com/infi_cloud" class="icon"
+					><i class="fab fa-twitter"></i
+				></a>
+				<a href="https://instagram.com/inficloud_" class="icon"
+					><i class="fab fa-instagram"></i
+				></a>
+			</div>
+		</section>
+
+		<div class="loader">
+			<div class="image">
+				<img src="/src/assets/images/logo-icon.png" alt="" />
+			</div>
+		</div>
+
+		<script src="/src/scripts/script.js"></script>
+	</body>
+</html>

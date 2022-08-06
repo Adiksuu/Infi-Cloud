@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Infi Cloud - PROFILE</title>
+		<link
+			rel="shortcut icon"
+			href="/src/assets/images/logo-borderless.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/src/assets/css/design/style.css" />
+		<link rel="stylesheet" href="/src/assets/css/template/template.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+	</head>
+	<body onload="loader();">
+		<div class="scrollToTop-btn">
+			<i class="fas fa-angle-up"></i>
+		</div>
+
+		<header class="l-header">
+			<nav class="nav bd-grid">
+				<div>
+					<a href="#" class="nav__logo">Infinity Cloud</a>
+				</div>
+
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="/index.html#home" class="nav__link">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="/index.html#users" class="nav__link">portfolio</a>
+						</li>
+						<li class="nav__item" id="start">
+							<a href="#" onclick="getStarted();" class="nav__link"
+								>Get Started</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="fas fa-bars"></i>
+				</div>
+			</nav>
+		</header>
+
+		<div class="loader">
+			<div class="image">
+				<img src="/src/assets/images/logo-icon.png" alt="" />
+			</div>
+		</div>
+
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio__content">
+				<div class="portfolio__image">
+					<img src="/src/assets/images/logoAdiksuu.png" alt="" />
+				</div>
+				<div class="portfolio__about">
+					<h1 class="portfolio__name">CodeAdiksuu</h1>
+					<p class="portfolio__info">Web Designer</p>
+					<div class="portfolio__socials">
+						<a href="https://codeadiksuuweb.ml" class="icon"
+							><i class="fas fa-globe"></i
+						></a>
+						<a href="https://patreon.com/adiksuu" class="icon"
+							><i class="fab fa-patreon"></i
+						></a>
+						<a href="https://instagram.com/adiksuu_" class="icon"
+							><i class="fab fa-instagram"></i
+						></a>
+					</div>
+				</div>
+				<div class="portfolio__stats">
+					<div class="portfolio__box">
+						<h1 class="portfolio__count">50+ <i class="fas fa-folders"></i></h1>
+						<p class="portfolio__count__text">Completed Projects</p>
+					</div>
+					<div class="portfolio__box">
+						<h1 class="portfolio__count">10+ <i class="fas fa-globe"></i></h1>
+						<p class="portfolio__count__text">Published Websites</p>
+					</div>
+					<div class="portfolio__box">
+						<h1 class="portfolio__count">240+ <i class="fas fa-hourglass"></i></h1>
+						<p class="portfolio__count__text">Spend Hours</p>
+					</div>
+				</div>
+				<div class="portfolio__button">
+					<button
+						class="color-purple border-15 width-20 font-poppins weight-500" onclick="openGithub();"
+					>
+						Github <i class="fab fa-github"></i>
+					</button>
+					<button
+						class="color-purple border-15 width-20 font-poppins weight-500"
+						onclick="loadStats();"
+					>
+						Stats <i class="fas fa-user"></i>
+					</button>
+				</div>
+				<div class="portfolio__images">
+					<div class="portfolio__images__box">
+						<img src="/src/assets/images/project1.png" alt="" />
+					</div>
+					<div class="portfolio__images__box">
+						<img src="/src/assets/images/project3.png" alt="" />
+					</div>
+					<div class="portfolio__images__box">
+						<img src="/src/assets/images/project4.png" alt="" />
+					</div>
+				</div>
+				<div class="portfolio__experience font-poppins weight-500">
+					<div class="experience__boxes">
+						<div class="portfolio__experience__box">
+							<div class="experience__info">
+								<p class="experience__name" id="nameOne">
+									<i class="fas fa-spinner-third"></i>
+								</p>
+								<p class="experience__value" id="htmlValue">
+									Loading <i class="fas fa-spinner-third"></i>
+								</p>
+								<div class="experience__bar">
+									<div class="bar__color" id="bar-html"></div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__experience__box">
+							<div class="experience__info">
+								<p class="experience__name" id="nameTwo">
+									<i class="fas fa-spinner-third"></i>
+								</p>
+								<p class="experience__value" id="cssValue">
+									Loading <i class="fas fa-spinner-third"></i>
+								</p>
+								<div class="experience__bar">
+									<div class="bar__color" id="bar-css"></div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__experience__box">
+							<div class="experience__info">
+								<p class="experience__name" id="nameThree">
+									<i class="fas fa-spinner-third"></i>
+								</p>
+								<p class="experience__value" id="jsValue">
+									Loading <i class="fas fa-spinner-third"></i>
+								</p>
+								<div class="experience__bar">
+									<div class="bar__color" id="bar-js"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="experience__message" onclick="loadStats();">
+						<p><i class="fas fa-times"></i></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			function loadingStats() {
+				// USER STATS AND BAR COMPLETE
+				const htmlValue = "80%";
+				const cssValue = "70%";
+				const jsValue = "45%";
+
+				const completeBarHtml = document.getElementById("bar-html");
+				const completeBarCss = document.getElementById("bar-css");
+				const completeBarJs = document.getElementById("bar-js");
+
+				const statsNameOne = "html";
+				const statsNameTwo = "css";
+				const statsNameThree = "javascript";
+
+				const loadingStatsHtml = document.getElementById("htmlValue");
+				const loadingStatsCss = document.getElementById("cssValue");
+				const loadingStatsJs = document.getElementById("jsValue");
+
+				const nameOne = document.getElementById("nameOne");
+				const nameTwo = document.getElementById("nameTwo");
+				const nameThree = document.getElementById("nameThree");
+
+				completeBarHtml.style.width = `${htmlValue}`;
+				completeBarCss.style.width = `${cssValue}`;
+				completeBarJs.style.width = `${jsValue}`;
+
+				loadingStatsHtml.innerHTML = `${htmlValue}`;
+				loadingStatsCss.innerHTML = `${cssValue}`;
+				loadingStatsJs.innerHTML = `${jsValue}`;
+
+				nameOne.innerHTML = `${statsNameOne}`;
+				nameTwo.innerHTML = `${statsNameTwo}`;
+				nameThree.innerHTML = `${statsNameThree}`;
+			}
+			function loadStats() {
+				const stats = document.querySelector(".portfolio__experience");
+				stats.classList.toggle("show");
+
+				setTimeout(loadingStats, 2000);
+			}
+		</script>
+
+		<script src="/src/scripts/script.js"></script>
+	</body>
+</html>

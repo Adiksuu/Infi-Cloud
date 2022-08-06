@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Infi Cloud - HOME</title>
+		<link
+			rel="shortcut icon"
+			href="/src/assets/images/logo-borderless.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="/src/assets/css/design/style.css" />
+		<link rel="stylesheet" href="/src/assets/css/template/template.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+	</head>
+	<body onload="loader();">
+		<div class="scrollToTop-btn">
+			<i class="fas fa-angle-up"></i>
+		</div>
+
+		<header class="l-header">
+			<nav class="nav bd-grid">
+				<div>
+					<a href="#" class="nav__logo">Infinity Cloud</a>
+				</div>
+
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="#users" class="nav__link">portfolio</a>
+						</li>
+						<li class="nav__item" id="start">
+							<a href="#" onclick="getStarted();" class="nav__link">Get Started</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="fas fa-bars"></i>
+				</div>
+			</nav>
+		</header>
+
+		<section class="home font-poppins" id="home">
+			<div class="home__info">
+				<h1 class="home__title">welcome to <span>infi-cloud</span></h1>
+				<p class="home__subtitle small-text">
+					Do you want to create your own Portfolio website and don't know how to
+					do it or don't want to overpay for a programmer? Infi-Cloud will help
+					you with this for a small fee! Join our community now!
+				</p>
+			</div>
+			<div class="home__buttons flex">
+				<button class="border-50 weight-500 color-purple outline width-50" onclick="getStarted();">
+					CREATE MY PORTFOLIO
+				</button>
+			</div>
+			<div class="home__socials flex reveal">
+				<a href="#" class="icon"><i class="fab fa-discord"></i></a>
+				<a href="https://twitter.com/infi_cloud" class="icon"><i class="fab fa-twitter"></i></a>
+				<a href="https://instagram.com/inficloud_" class="icon"><i class="fab fa-instagram"></i></a>
+			</div>
+		</section>
+
+		<section class="start font-poppins weight-500 id="get-started">
+			<div class="start__box">
+				<h1 class="start__name reveal">Make Own <span>Portfolio</span></h1>
+				<p class="start__text reveal">Do you want to create your own Portfolio website?</p>
+				<button onclick="getStarted();" class="drop color-purple border-50 width-20">GET STARTED</button>
+			</div>
+		</section>
+
+		<section class="users" id="users">
+			<h1 class="section__title">USERS PORTFOLIO</h1>
+			<div class="users__boxes flex">
+				<div class="user__box">
+					<div class="user__icon">
+						<img class="rotate" src="/src/assets/images/logoAdiksuu.png" alt="">
+					</div>
+					<div class="user__info">
+						<h1 class="user__name drop">Adiksuu</h1>
+						<p class="user__date reveal">Added 04.08.2022</p>
+						<div class="user__button">
+							<a href="/src/users/adiksuu.html"><button class="width-100 border-0 color-purple tran-border-background">CHECK PORTFOLIO</button></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<footer class="footer">
+			<p class="footer__title">Adiksuu</p>
+
+			<div class="footer__social">
+				<a href="https://be.net/Adiksuu" class="footer__icon"
+					><i class="fab fa-behance"></i
+				></a>
+				<a href="https://patreon.com/adiksuu" class="footer__icon"
+					><i class="fab fa-patreon"></i
+				></a>
+				<a href="https://github.com/Adiksuu" class="footer__icon"
+					><i class="fab fa-github"></i
+				></a>
+			</div>
+
+			<p>&#169; 2022 copyright <span>CodeAdiksuu</span>.</p>
+		</footer>
+
+		<div class="loader">
+			<div class="image">
+				<img src="/src/assets/images/logo-icon.png" alt="" />
+			</div>
+		</div>
+
+		<script src="/src/scripts/script.js"></script>
+	</body>
+</html>

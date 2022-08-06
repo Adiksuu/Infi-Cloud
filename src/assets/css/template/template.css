@@ -1,0 +1,480 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+	src: url(/src/assets/fonts/Want\ Coffee.ttf);
+	font-family: wantCoffee;
+}
+
+/* COLORS */
+
+:root {
+	--gradient-red-orange: 315deg, var(--red-color-dark) 25%, var(--orange-color-dark);
+	--gradient-orange-yellow: 315deg, var(--orange-color-dark) 25%, var(--yellow-color-dark);
+	--gradient-orange-green: 315deg, var(--yellow-color-dark) 25%, var(--green-color-dark);
+}
+
+body {
+	--black-color: #0f0f0f;
+	--white-color: #fff;
+}
+body.dark {
+	--white-color: #0f0f0f;
+	--black-color: #fff;
+}
+
+:root {
+	--red-color: #e97b7b;
+	--red-color-dark: #d83e3e;
+	--red-color-darkness: #ac1e1e;
+
+	--orange-color: #e9b07b;
+	--orange-color-dark: #ee923b;
+	--orange-color-darkness: #dd8219;
+
+	--yellow-color: #e9e27b;
+	--yellow-color-dark: #eeeb3b;
+	--yellow-color-darkness: #d0dd19;
+
+	--green-color: #7fe97b;
+	--green-color-dark: #3ed83e;
+	--green-color-darkness: #23ac1e;
+
+	--blue-color: #7bd8e9;
+	--blue-color-dark: #3ec1d8;
+	--blue-color-darkness: #1e96ac;
+
+	--purple-color: #d77be9;
+	--purple-color-dark: #a03ed8;
+	--purple-color-darkness: #8b1eac;
+
+	--primary-color: #cccccc;
+	--primary-color-dark: #b3b3b3;
+	--primary-color-darkness: #929292;
+}
+
+:root {
+	--br-5: 5px;
+	--br-10: 10px;
+	--br-15: 15px;
+}
+
+:root {
+	--text-white: #fff;
+	--text-black: #000;
+	--text-grey: #bdbdbd;
+}
+
+
+
+
+/* BUTTON STYLING */
+
+button, input#button {
+	width: 140px;
+	height: 50px;
+	border-radius: var(--br-5);
+	border: 2px solid transparent;
+	color: var(--text-white);
+	font-size: 0.9rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.1s linear;
+}
+
+.color-primary {
+	background: var(--primary-color);
+}
+.color-primary-dark {
+	background: var(--primary-color-dark);
+}
+.color-primary-darkness {
+	background: var(--primary-color-darkness);
+}
+
+.color-blue {
+	background: var(--blue-color);
+}
+.color-blue-dark {
+	background: var(--blue-color-dark);
+}
+.color-blue-darkness {
+	background: var(--blue-color-darkness);
+}
+
+.color-green {
+	background: var(--green-color);
+}
+.color-green-dark {
+	background: var(--green-color-dark);
+}
+.color-green-darkness {
+	background: var(--green-color-darkness);
+}
+
+.color-red {
+	background: var(--red-color);
+}
+.color-red-dark {
+	background: var(--red-color-dark);
+}
+.color-red-darkness {
+	background: var(--red-color-darkness);
+}
+
+.color-orange {
+	background: var(--orange-color);
+}
+.color-orange-dark {
+	background: var(--orange-color-dark);
+}
+.color-orange-darkness {
+	background: var(--orange-color-darkness);
+}
+
+.color-yellow {
+	background: var(--yellow-color);
+}
+.color-yellow-dark {
+	background: var(--yellow-color-dark);
+}
+.color-yellow-darkness {
+	background: var(--yellow-color-darkness);
+}
+
+.color-purple {
+	background: var(--purple-color);
+}
+.color-purple-dark {
+	background: var(--purple-color-dark);
+}
+.color-purple-darkness {
+	background: var(--purple-color-darkness);
+}
+
+.color-red:hover,
+.color-red-dark:hover,
+.color-red-darkness:hover {
+	background: transparent;
+	border: 2px solid var(--red-color);
+	color: var(--red-color);
+}
+.color-orange:hover,
+.color-orange-dark:hover,
+.color-orange-darkness:hover {
+	background: transparent;
+	border: 2px solid var(--orange-color);
+	color: var(--orange-color);
+}
+.color-yellow:hover,
+.color-yellow-dark:hover,
+.color-yellow-darkness:hover {
+	background: transparent;
+	border: 2px solid var(--yellow-color);
+	color: var(--yellow-color);
+}
+.color-green:hover,
+.color-green-dark:hover,
+.color-green-darkness:hover {
+	background: transparent;
+	border: 2px solid var(--green-color);
+	color: var(--green-color);
+}
+.color-blue:hover,
+.color-blue-dark:hover,
+.color-blue-darkness:hover {
+	background: transparent;
+	border: 2px solid var(--blue-color);
+	color: var(--blue-color);
+}
+.color-purple:hover,
+.color-purple-dark:hover,
+.color-purple-darkness:hover {
+	background: transparent;
+	border: 2px solid var(--purple-color);
+	color: var(--purple-color);
+}
+.color-primary:hover,
+.color-primary-dark:hover,
+.color-primary-darkness:hover {
+	background: transparent;
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+button.outline, input#button.outline {
+	background: transparent;
+	transition: 0.2s linear;
+}
+.color-red.outline {
+	border: 2px solid var(--red-color);
+	color: var(--red-color);
+}
+.color-orange.outline {
+	border: 2px solid var(--orange-color);
+	color: var(--orange-color);
+}
+.color-yellow.outline {
+	border: 2px solid var(--yellow-color);
+	color: var(--yellow-color);
+}
+.color-green.outline {
+	border: 2px solid var(--green-color);
+	color: var(--green-color);
+}
+.color-blue.outline {
+	border: 2px solid var(--blue-color);
+	color: var(--blue-color);
+}
+.color-purple.outline {
+	border: 2px solid var(--purple-color);
+	color: var(--purple-color);
+}
+.color-primary.outline {
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.color-red.outline:hover {
+	border: 2px solid transparent;
+	color: var(--text-white);
+	background: var(--red-color-dark);
+}
+.color-orange.outline:hover {
+	border: 2px solid transparent;
+	color: var(--text-white);
+	background: var(--orange-color-dark);
+}
+.color-yellow.outline:hover {
+	border: 2px solid transparent;
+	color: var(--text-white);
+	background: var(--yellow-color-dark);
+}
+.color-green.outline:hover {
+	border: 2px solid transparent;
+	color: var(--text-white);
+	background: var(--green-color-dark);
+}
+.color-blue.outline:hover {
+	border: 2px solid transparent;
+	color: var(--text-white);
+	background: var(--blue-color-dark);
+}
+.color-purple.outline:hover {
+	border: 2px solid transparent;
+	color: var(--text-white);
+	background: var(--purple-color-dark);
+}
+.color-primary.outline:hover {
+	border: 2px solid transparent;
+	color: var(--text-white);
+	background: var(--primary-color-dark);
+}
+
+.border-0 {
+	border-radius: 0;
+}
+.border-5 {
+	border-radius: 5px;
+}
+.border-10 {
+	border-radius: 10px;
+}
+.border-15 {
+	border-radius: 15px;
+}
+.border-50 {
+	border-radius: 50px;
+}
+
+button.tran-border:hover {
+	border-radius: 5px;
+	transition: 0.4s linear;
+}
+button.tran-border-background:hover {
+	border-radius: 0;
+	border: 2px solid transparent;
+	color: var(--text-white);
+	transition: .3s linear;
+}
+button.color-red.tran-border-background:hover {
+	background: var(--red-color);
+}
+button.color-orange.tran-border-background:hover {
+	background: var(--orange-color);
+}
+button.color-yellow.tran-border-background:hover {
+	background: var(--yellow-color);
+}
+button.color-green.tran-border-background:hover {
+	background: var(--green-color);
+}
+button.color-blue.tran-border-background:hover {
+	background: var(--blue-color);
+}
+button.color-purple.tran-border-background:hover {
+	background: var(--purple-color);
+}
+button.color-primary.tran-border-background:hover {
+	background: var(--primary-color);
+}
+
+
+
+/* BUTTON TRANSITION - SCALE */
+
+button.tran-scale-big:hover {
+	transform: scale(1.025);
+	transition: .3s linear;
+}
+button.tran-scale-small:hover {
+	transform: scale(.95);
+	transition: .3s linear;
+}
+
+
+/* DISPLAYS */
+
+.grid {
+	display: grid;
+	gap: 30px;
+	grid-auto-rows: auto;
+}
+.flex {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+
+
+/* TEXT THEMES */
+
+.font-sans {
+	font-family: sans-serif;
+}
+.font-poppins {
+	font-family: 'Poppins';
+}
+.font-monospace {
+	font-family: monospace;
+}
+.font-nunito {
+	font-family: 'Nunito';
+}
+.font-serif {
+	font-family: serif;
+}
+.font-fantasy {
+	font-family: fantasy;
+}
+.font-courier {
+	font-family: Courier;
+}
+.font-coffee {
+	font-family: wantCoffee;
+}
+
+.weight-100 {
+	font-weight: 100;
+}
+.weight-200 {
+	font-weight: 200;
+}
+.weight-300 {
+	font-weight: 300;
+}
+.weight-400 {
+	font-weight: 400;
+}
+.weight-500 {
+	font-weight: 500;
+}
+.weight-600 {
+	font-weight: 600;
+}
+.weight-700 {
+	font-weight: 700;
+}
+.weight-800 {
+	font-weight: 800;
+}
+
+
+
+/* BUTTON WIDTH THEMES */
+
+.width-100 {
+	width: 100%;
+}
+.width-50 {
+	width: 50%;
+}
+.width-20 {
+	width: 20%;
+}
+
+
+
+/* TEXT STYLING */
+
+.text {
+	font-size: 2rem;
+	color: var(--text-black);
+}
+.sub-text {
+	font-size: 1rem;
+	color: var(--text-black);
+
+}
+.small-text {
+	font-size: .7rem;
+	color: var(--text-grey);
+}
+
+
+button.tran-glow{
+  background: var(--primary-color);
+  color: var(--text-white);
+  transition: background 0.5s;
+}
+button.tran-glow:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #fa7199, #f5ce62, #03a9f4);
+  background-size: 400%;
+}
+button.tran-glow:last-child:hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+button.tran-glow:first-child:before,
+button.tran-glow:last-child:before{
+  content: '';
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button.tran-glow:first-child:hover:before,
+button.tran-glow:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button.tran-glow:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
